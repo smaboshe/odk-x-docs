@@ -299,7 +299,7 @@ The :file:`framework.xlsx` file is central to the structure of the Application D
         -
         -
       * -
-        - | '?' + odkSurvey.getHashString('census')
+        - | ''?' + odkSurvey.getHashString('census')
         -
         -
         - external_link
@@ -330,7 +330,7 @@ Assuming you have created a :file:`testForm.xlsx`, the appropriate directory str
   :header: "branch_label", "url", "clause", "condition", "type", "values_list", "display.text", "display.hint"
 
   "testForm",
-  , "''?' + opendatakit.getHashString('testForm')",,, "external_link",,"Open form",
+  , "''?' + odkSurvey.getHashString('testForm')",,, "external_link",,"Open form",
   ,,"exit section",
 
 The following changes will also need to be made to the :file:`framework.xlsx` **choices worksheet**
